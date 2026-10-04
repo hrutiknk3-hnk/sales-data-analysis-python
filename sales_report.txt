@@ -1,0 +1,45 @@
+
+====================================
+       SALES ANALYSIS REPORT
+====================================
+
+Total Revenue: ₹329,900.00
+Total Orders: 10
+Average Order Value: ₹32,990.00
+
+------------------------------------
+PRODUCT INSIGHTS
+------------------------------------
+
+Highest Revenue Product: Laptop
+Best-Selling Product by Quantity: Mouse
+
+Revenue by Product:
+Product
+Keyboard      8400
+Laptop      250000
+Monitor      60000
+Mouse        11500
+
+------------------------------------
+REGIONAL INSIGHTS
+------------------------------------
+
+Highest Revenue Region: East
+
+Revenue by Region:
+Region
+East     139600
+North     56500
+South    105000
+West      28800
+
+------------------------------------
+BUSINESS CONCLUSION
+------------------------------------
+
+The Laptop generated the highest revenue.
+The Mouse had the highest sales quantity.
+The East region contributed the most revenue.
+
+====================================

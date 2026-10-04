@@ -1,0 +1,11 @@
+OrderID,Date,Product,Category,Quantity,UnitPrice,Region
+101,2026-01-05,Laptop,Electronics,2,50000,South
+102,2026-01-06,Mouse,Accessories,5,500,North
+103,2026-01-08,Keyboard,Accessories,3,1200,East
+104,2026-01-10,Monitor,Electronics,2,12000,West
+105,2026-01-12,Laptop,Electronics,1,50000,North
+106,2026-02-02,Mouse,Accessories,10,500,South
+107,2026-02-05,Keyboard,Accessories,4,1200,West
+108,2026-02-09,Monitor,Electronics,3,12000,East
+109,2026-02-14,Laptop,Electronics,2,50000,East
+110,2026-02-18,Mouse,Accessories,8,500,North
