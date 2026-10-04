@@ -275,3 +275,43 @@ with open("sales_report.txt", "w", encoding="utf-8") as file:
     file.write(report)
 
 print("\nSales report generated successfully!")
+
+# Step 4: Advanced Sales Insights
+
+# Average order value
+total_revenue = clean_data["Revenue"].sum()
+total_orders = clean_data["OrderID"].nunique()
+
+average_order_value = total_revenue / total_orders
+
+print("\n--- ADVANCED SALES INSIGHTS ---")
+print(f"Average Order Value: ₹{average_order_value:,.2f}")
+
+# Revenue contribution by product
+product_revenue = clean_data.groupby("Product")["Revenue"].sum()
+
+product_contribution = (
+    product_revenue / total_revenue * 100
+)
+
+print("\nProduct Revenue Contribution (%):")
+print(product_contribution.round(2))
+
+# Revenue contribution by region
+region_revenue = clean_data.groupby("Region")["Revenue"].sum()
+
+top_region = region_revenue.idxmax()
+
+print("\nTop Performing Region:", top_region)
+print("Revenue:", f"₹{region_revenue.max():,.2f}")
+
+# Save insights
+insights = pd.DataFrame({
+    "Product": product_revenue.index,
+    "Revenue": product_revenue.values,
+    "Contribution_Percentage": product_contribution.values
+})
+
+insights.to_csv("data/product_insights.csv", index=False)
+
+print("\nProduct insights saved successfully!")
